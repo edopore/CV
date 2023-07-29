@@ -1,0 +1,50 @@
+:root {
+  --page-bg-color: rgb(233, 240, 240);
+}
+header {
+  background: scroll;
+}
+body {
+  background-color: var(--page-bg-color);
+}
+.nav-link {
+  padding: auto;
+  margin: 10px;
+  list-style: none;
+}
+.nav-link a:hover {
+  text-decoration: none;
+}
+.nav-link a:link {
+  text-decoration: none;
+}
+.nav-link a:visited {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar {
+  display: flex;
+  font-family: sans-serif, Helvetica, Arial;
+}
+.course-card {
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4px;
+}
+#about-me {
+  display: flex;
+  align-items: flex-start;
+}
+.footer li {
+  align-items: center;
+  list-style: none;
+}
+
+p {
+  font-size: 24px;
+  font-style: bold;
+}
+a {
+  align-items: center;
+}
