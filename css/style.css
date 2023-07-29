@@ -7,6 +7,12 @@ header {
 body {
   background-color: var(--page-bg-color);
 }
+.title-name {
+  background-color: darkblue;
+  height: 250px;
+  color: var(--page-bg-color);
+  text-align: center;
+}
 .nav-link {
   padding: auto;
   margin: 10px;
