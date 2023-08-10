@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 :root {
   --page-bg-color: rgb(233, 240, 240);
 }
@@ -6,6 +7,7 @@ header {
 }
 body {
   background-color: var(--page-bg-color);
+  font-family: "Roboto", "Raleway", sans-serif;
 }
 .title-name {
   background-color: darkblue;
@@ -30,7 +32,6 @@ body {
 }
 .nav-bar {
   display: flex;
-  font-family: sans-serif, Helvetica, Arial;
 }
 .course-card {
   gap: 10px;
