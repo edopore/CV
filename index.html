@@ -4,293 +4,306 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
   <body>
     <script src="./js/index.js"></script>
     <header>
-      <nav class="nav-bar">
-        <a href="./index.html" class="logo">MyLogo</a>
-        <ul class="nav-bar menu">
-          <li class="nav-link">
-            <a href="#about-me">Acerca de mi</a>
-          </li>
-          <li class="nav-link">
-            <a href="#courses">Formacion Académica</a>
-          </li>
-          <li class="nav-link">
-            <a href="#work-experience">Experiencia Laboral</a>
-          </li>
-          <li class="nav-link">
-            <a href="#projects">Proyectos</a>
-          </li>
-          <li class="nav-link">
-            <a href="#skills">Skills</a>
-          </li>
-          <li class="nav-link">
-            <a href="#contact-me">Contacta me</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav-bar nav-container">
+          <a href="./index.html" class="logo">MyLogo</a>
+          <ul class="nav-bar menu">
+            <li class="nav-link">
+              <a href="#about-me">Acerca de mi</a>
+            </li>
+            <li class="nav-link">
+              <a href="#courses">Formacion Académica</a>
+            </li>
+            <li class="nav-link">
+              <a href="#work-experience">Experiencia Laboral</a>
+            </li>
+            <li class="nav-link">
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-link">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact-me">Contacta me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="title-name">
-        <h1>Eduardo José Maya Rodriguez</h1>
+        <div class="container">
+          <h1>Eduardo José Maya Rodriguez</h1>
+          <h2>Ingeniero electrónico</h2>
+        </div>
       </section>
       <section class="about-me" id="about-me">
-        <h2>Acerca de Mi</h2>
-        <img
-          id="photo"
-          src="./img/profile.jpg"
-          alt="profile photo"
-          width="250"
-        />
-        <ul>
-          <li>
-            <p>
-              Ingeniero electrónico egresado de la Universidad de Antioquia. Con
-              conocimientos en programacion web, haciendo uso de lenguajes de
-              programacion como Java, Python, JavaScript y PHP.
-            </p>
-          </li>
-          <li>
-            <p>
-              tengo conocimientos en frameworks de desarrollo como django de
-              python, node.js de JavaScript y Laravel de PHP. Uso de librerias
-              para desarrollo web como flask, manejo de datos y machine learning
-              como Pandas y scikit-learn, Testing como mocha, axios, cypress.
-              Entre otros...
-            </p>
-          </li>
-          <li>
-            <p>
-              Soy una persona con interes en adquirir nuevos conocimientos y
-              ponerlos a prueba en retos dentro del mundo del desarrollo y la
-              programación, Soy colaborador. Activo en el trabajo en grupo para
-              realizar soluciones tecnologicas de gran impacto.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="courses" id="courses">
-        <section class="education">
-          <h2>Formación Académica</h2>
+        <div class="container">
+          <h2>Acerca de Mi</h2>
+          <img
+            id="photo"
+            src="./img/profile.jpg"
+            alt="profile photo"
+            width="250"
+          />
           <ul>
             <li>
-              <h3>Ingenieria electrónica</h3>
-              <p>Universidad de Antioquia.</p>
-              <p>Marzo 2021</p>
               <p>
-                Ingenieria electrónica con enfasis en sistemas de control,
-                programación y redes de telecomunicaciones.
+                Ingeniero electrónico egresado de la Universidad de Antioquia.
+                Con conocimientos en programacion web, haciendo uso de lenguajes
+                de programacion como Java, Python, JavaScript y PHP.
+              </p>
+            </li>
+            <li>
+              <p>
+                tengo conocimientos en frameworks de desarrollo como django de
+                python, node.js de JavaScript y Laravel de PHP. Uso de librerias
+                para desarrollo web como flask, manejo de datos y machine
+                learning como Pandas y scikit-learn, Testing como mocha, axios,
+                cypress. Entre otros...
+              </p>
+            </li>
+            <li>
+              <p>
+                Soy una persona con interes en adquirir nuevos conocimientos y
+                ponerlos a prueba en retos dentro del mundo del desarrollo y la
+                programación, Soy colaborador. Activo en el trabajo en grupo
+                para realizar soluciones tecnologicas de gran impacto.
               </p>
             </li>
           </ul>
-        </section>
-        <section class="courses">
-          <h2>Cursos y Seminarios</h2>
+        </div>
+      </section>
+      <section class="courses" id="courses">
+        <div class="container">
+          <section class="education">
+            <h2>Formación Académica</h2>
+            <ul class="ul__education">
+              <li>
+                <h3>Ingenieria electrónica</h3>
+                <p>Universidad de Antioquia.</p>
+                <p>Marzo 2021</p>
+                <p>
+                  Ingenieria electrónica con enfasis en sistemas de control,
+                  programación y redes de telecomunicaciones.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="courses">
+            <h2>Cursos y Seminarios</h2>
+            <ul class="ul__courses">
+              <li class="course-card">
+                <h3>
+                  La Biblia de Node.js: conviertete en un experto del backend
+                </h3>
+                <p>Udemy</p>
+                <p>Junio, 2023</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>Node.js</li>
+                  <li>Desarrollo Web Backend</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>Python development training</h3>
+                <p>Brainnest</p>
+                <p>Marzo, 2023</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>Python</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>Fundamentos de Analitica de datos</h3>
+                <p>Correlation One - MinTIC</p>
+                <p>Diciembre, 2022</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>Python</li>
+                  <li>MS Excel</li>
+                  <li>SQL</li>
+                  <li>Analisis de datos</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>Aprende SQL desde cero:¡Curso con más de 50 ejercicios!</h3>
+                <p>Udemy</p>
+                <p>Octubre 2022</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>SQL</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>Diplomado de prgramación en JAVA</h3>
+                <p>Politecnico de Colombia</p>
+                <p>Octubre, 2022</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>JAVA</li>
+                  <li>Apache Netbeans</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>QA Automation Bootcamp</h3>
+                <p>Perficient Latin America</p>
+                <p>Agosto, 2022</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Axios</li>
+                  <li>Mocha</li>
+                  <li>NodeJS</li>
+                  <li>GIT</li>
+                </ul>
+              </li>
+              <li class="course-card">
+                <h3>
+                  Diplonado en técnicas de apoyo para la protección de la
+                  información bajo norma ISO 27001:2013
+                </h3>
+                <p>Instituto Tecnológico del Putumayo</p>
+                <p>Junio, 2022</p>
+                <h4>Habilidades:</h4>
+                <ul class="ul_skill__list">
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>Ethical Hacking</li>
+                  <li>Computación Forense</li>
+                  <li>ISO 27001:2013</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="work-experience" id="work-experience">
+        <div class="container">
+          <h2>Experiencia Laboral</h2>
           <ul>
-            <li class="course-card">
-              <h3>
-                La Biblia de Node.js: conviertete en un experto del backend
-              </h3>
-              <p>Udemy</p>
-              <p>Junio, 2023</p>
-              <span>Habilidades:</span>
+            <li class="work-card">
+              <h3>Jefe de TI para el departamento del Putumayo</h3>
+              <p>ISA NETWORKS ISP SAS</p>
+              <p>Octubre 2021 - Actualidad</p>
               <ul>
-                <li>Node.js</li>
-                <li>Desarrollo Web Backend</li>
+                <li>Manejo de personal técnico</li>
+                <li>
+                  Programación de actividades de personal técnico para todas las
+                  oficinas en el departamento del putumayo
+                </li>
+                <li>Administración de redes GPON</li>
+                <li>Configuración de equipos GPON ONU/ONT HUAWEI, E4Link</li>
+                <li>Configuracion de equipos GPON OLT HUAWEI</li>
+                <li>Configuracion de equipos MikroTik</li>
+                <li>Configuracion de equipos de red</li>
+              </ul>
+              <h4>Habilidades:</h4>
+              <ul class="ul_skill__list">
+                <li>Python: Pandas, RouterosAPI, Django, Paramiko</li>
+                <li>MS Excel, Libreoffice Sheets</li>
+                <li>CLI</li>
+                <li>Linux</li>
+                <li>Mikrotik</li>
+                <li>HUAWEI</li>
               </ul>
             </li>
-            <li class="course-card">
-              <h3>Python development training</h3>
-              <p>Brainnest</p>
-              <p>Marzo, 2023</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>Python</li>
+            <li class="work-card">
+              <h3>Auxiliar de Sistemas</h3>
+              <p>ISA NETWORKS ISP SAS</p>
+              <p>Junio 2020 - Octubre 2021</p>
+              <ul class="ul_skill__list">
+                <li>Soporte técnico y atención al usuario</li>
+                <li>Administración de redes GPON</li>
+                <li>Configuración básica de equipos GPON ONU/ONT HUAWEI</li>
+                <li>Configuración Basica de equipos Mikrotik</li>
+                <li>
+                  Programación para uso de API Service para obtención de
+                  recursos de equipos MikroTik
+                </li>
               </ul>
-            </li>
-            <li class="course-card">
-              <h3>Fundamentos de Analitica de datos</h3>
-              <p>Correlation One - MinTIC</p>
-              <p>Diciembre, 2022</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>Python</li>
+              <h4>Habilidades:</h4>
+              <ul class="ul_skill__list">
+                <li>Python: Pandas, RouterosAPI, Paramiko</li>
                 <li>MS Excel</li>
-                <li>SQL</li>
-                <li>Analisis de datos</li>
-              </ul>
-            </li>
-            <li class="course-card">
-              <h3>Aprende SQL desde cero:¡Curso con más de 50 ejercicios!</h3>
-              <p>Udemy</p>
-              <p>Octubre 2022</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>SQL</li>
-              </ul>
-            </li>
-            <li class="course-card">
-              <h3>Diplomado de prgramación en JAVA</h3>
-              <p>Politecnico de Colombia</p>
-              <p>Octubre, 2022</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>JAVA</li>
-                <li>Apache Netbeans</li>
-              </ul>
-            </li>
-            <li class="course-card">
-              <h3>QA Automation Bootcamp</h3>
-              <p>Perficient Latin America</p>
-              <p>Agosto, 2022</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Axios</li>
-                <li>Mocha</li>
-                <li>NodeJS</li>
-                <li>GIT</li>
-              </ul>
-            </li>
-            <li class="course-card">
-              <h3>
-                Diplonado en técnicas de apoyo para la protección de la
-                información bajo norma ISO 27001:2013
-              </h3>
-              <p>Instituto Tecnológico del Putumayo</p>
-              <p>Junio, 2022</p>
-              <span>Habilidades:</span>
-              <ul>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Ethical Hacking</li>
-                <li>Computación Forense</li>
-                <li>ISO 27001:2013</li>
+                <li>LINUX</li>
+                <li>Mikrotik</li>
+                <li>HUAWEI</li>
               </ul>
             </li>
           </ul>
-        </section>
-      </section>
-      <section class="work-experience" id="work-experience">
-        <h2>Experiencia Laboral</h2>
-        <ul>
-          <li class="work-card">
-            <h3>Jefe de TI para el departamento del Putumayo</h3>
-            <p>ISA NETWORKS ISP SAS</p>
-            <p>Octubre 2021 - Actualidad</p>
-            <ul>
-              <li>Manejo de personal técnico</li>
-              <li>
-                Programación de actividades de personal técnico para todas las
-                oficinas en el departamento del putumayo
-              </li>
-              <li>Administración de redes GPON</li>
-              <li>Configuración de equipos GPON ONU/ONT HUAWEI, E4Link</li>
-              <li>Configuracion de equipos GPON OLT HUAWEI</li>
-              <li>Configuracion de equipos MikroTik</li>
-              <li>Configuracion de equipos de red</li>
-            </ul>
-            <span>Habilidades:</span>
-            <ul>
-              <li>Python: Pandas, RouterosAPI, Django, Paramiko</li>
-              <li>MS Excel, Libreoffice Sheets</li>
-              <li>CLI</li>
-              <li>Linux</li>
-              <li>Mikrotik</li>
-              <li>HUAWEI</li>
-            </ul>
-          </li>
-          <li class="work-card">
-            <h3>Auxiliar de Sistemas</h3>
-            <p>ISA NETWORKS ISP SAS</p>
-            <p>Junio 2020 - Octubre 2021</p>
-            <ul>
-              <li>Soporte técnico y atención al usuario</li>
-              <li>Administración de redes GPON</li>
-              <li>Configuración básica de equipos GPON ONU/ONT HUAWEI</li>
-              <li>Configuración Basica de equipos Mikrotik</li>
-              <li>
-                Programación para uso de API Service para obtención de recursos
-                de equipos MikroTik
-              </li>
-            </ul>
-            <span>Habilidades:</span>
-            <ul>
-              <li>Python: Pandas, RouterosAPI, Paramiko</li>
-              <li>MS Excel</li>
-              <li>LINUX</li>
-              <li>Mikrotik</li>
-              <li>HUAWEI</li>
-            </ul>
-          </li>
-        </ul>
+        </div>
       </section>
       <section class="projects" id="projects">
-        <h2>Proyectos y publicaciones</h2>
-        <ul>
-          <li class="projects">
-            <h3>Proyectos</h3>
-          </li>
-        </ul>
-        <ul>
-          <li class="publications">
-            <h3>Publicaciones</h3>
-            <p>
-              Automatización del proceso de reconexión de usuarios en fechas de
-              corte con uso de la API de MikroTik
-            </p>
-            <p>Publicacion biblioteca UdeA</p>
-            <p>Febrero 2021</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2>Proyectos y publicaciones</h2>
+          <ul>
+            <li class="projects">
+              <h3>Proyectos</h3>
+            </li>
+          </ul>
+          <ul>
+            <li class="publications">
+              <h3>Publicaciones</h3>
+              <p>
+                Automatización del proceso de reconexión de usuarios en fechas
+                de corte con uso de la API de MikroTik
+              </p>
+              <p>Publicacion biblioteca UdeA</p>
+              <p>Febrero 2021</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Python</li>
-          <li>JAVA</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>GIT</li>
-          <li>MATLAB</li>
-          <li>SQL</li>
-          <li>Linux</li>
-          <li>Redes de Computadoras</li>
-          <li>Mikrotik RouterOS</li>
-        </ul>
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="ul_skill__list">
+            <li>Python</li>
+            <li>JAVA</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>GIT</li>
+            <li>MATLAB</li>
+            <li>SQL</li>
+            <li>Linux</li>
+            <li>Redes de Computadoras</li>
+            <li>Mikrotik RouterOS</li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+  </body>
+  <footer>
+    <div class="container">
       <address id="contact-me">
-        <span>Información de contacto</span>
-        <ul>
-          <li><a href="tel:+573115450311">+57 311 5450311</a></li>
-          <li>Location: Mocoa - Putumayo, Colombia</li>
+        <ul class="ul__address">
+          <li><h2>Información de contacto</h2></li>
+          <li><p>Location: Mocoa - Putumayo, Colombia</p></li>
+        </ul>
+        <ul class="ul__links">
           <li>
             <a href="mailto:eduardoj.mayar@gmail.com"
               >eduardoj.mayar@gmail.com</a
             >
           </li>
-        </ul>
-        <ul>
           <li>
             <a href="https://linkedin.com/in/eduardomaya"
               ><img
                 src="./img/linkedin.png"
                 alt="linkedin"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/edopore"
-              ><img
-                src="./img/signo-de-github.png"
-                alt="github"
                 width="50"
                 height="50"
             /></a>
@@ -304,12 +317,21 @@
                 height="50"
             /></a>
           </li>
+          <li>
+            <a href="https://github.com/edopore"
+              ><img
+                src="./img/signo-de-github.png"
+                alt="github"
+                width="50"
+                height="50"
+            /></a>
+          </li>
         </ul>
-        <p>
-          Designed By Eduardo José Maya Rodriguez in association with curvo
-          innovation labs 2023 all rights reserved
-        </p>
       </address>
-    </footer>
-  </body>
+      <p>
+        Designed By Eduardo José Maya Rodriguez in association with curvo
+        innovation labs 2023 all rights reserved
+      </p>
+    </div>
+  </footer>
 </html>

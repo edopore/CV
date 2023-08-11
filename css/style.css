@@ -1,57 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,500;10..48,700;10..48,800&family=Poppins:wght@200;300;400;600;900&display=swap");
 :root {
-  --page-bg-color: rgb(233, 240, 240);
-}
-header {
-  background: scroll;
+  --bg-color-primary: #ffffff;
+  --ft-color-primary: #10253a;
+  --ft-color-secondary: #123456;
+  --ft-color-active: #033aaf;
 }
 body {
-  background-color: var(--page-bg-color);
-  font-family: "Roboto", "Raleway", sans-serif;
-}
-.title-name {
-  background-color: darkblue;
-  height: 250px;
-  color: var(--page-bg-color);
+  font-family: "Bricolage Grotesque", "Poppins" sans-serif;
+  background-color: var(--bg-color-primary);
+  color: var(--ft-color-primary);
+  margin: 0px auto;
+  padding: 0px;
   text-align: center;
 }
-.nav-link {
-  padding: auto;
-  margin: 10px;
+ul {
+  padding: 0px;
+}
+ul li {
   list-style: none;
 }
-.nav-link a:hover {
-  text-decoration: none;
+.container {
+  margin: 0px auto;
+  width: 1200px;
 }
-.nav-link a:link {
-  text-decoration: none;
-}
-.nav-link a:visited {
-  text-decoration: none;
-  color: black;
-}
-.nav-bar {
-  display: flex;
-}
-.course-card {
-  gap: 10px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 4px;
-}
-#about-me {
-  display: flex;
-  align-items: flex-start;
-}
-.footer li {
-  align-items: center;
-  list-style: none;
-}
-
-p {
-  font-size: 24px;
-  font-style: bold;
+h1 {
+  font-weight: 700;
+  font-size: 50px;
 }
 a {
-  align-items: center;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+a:link {
+  color: var(--ft-color-primary);
+}
+a:visited {
+  color: var(--ft-color-primary);
+}
+a:active {
+  color: aqua;
+}
+a:hover {
+  color: var(--ft-color-active);
+}
+
+/*header*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  text-align: center;
+}
+
+/*Section title*/
+.title-name {
+  background-color: bisque;
+}
+.title-name:nth-child(n) {
+  padding: 10% 0px;
+}
+/*Section courses*/
+.ul__education {
+  display: flex;
+  justify-content: center;
+}
+.ul__courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.ul__courses .course-card {
+  border: 1px solid black;
+  width: 350px;
+}
+.ul_skill__list {
+  font-style: oblique;
+}
+/*Section work experience*/
+.work-card {
+  padding: 10%;
+  border: 1px solid black;
+  text-align: left;
 }
