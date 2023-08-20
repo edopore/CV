@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,500;10..48,700;10..48,800&family=Poppins:wght@200;300;400;600;900&display=swap");
 :root {
   --bg-color-primary: #ffffff;
+  --bg-color-photo: #f0f0f0;
   --ft-color-primary: #10253a;
   --ft-color-secondary: #123456;
   --ft-color-active: #033aaf;
 }
 body {
   font-family: "Bricolage Grotesque", "Poppins" sans-serif;
-  background-color: var(--bg-color-primary);
+  background-color: var(--bg-color-photo);
   color: var(--ft-color-primary);
   margin: 0px auto;
   padding: 0px;
@@ -20,6 +21,7 @@ ul li {
   list-style: none;
 }
 .container {
+  padding: 100px 0px;
   margin: 0px auto;
   width: 1200px;
 }
@@ -45,14 +47,19 @@ a:hover {
 }
 
 /*header*/
+.header-container {
+  padding: 10px 0px;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 50px;
 }
 .menu {
   display: flex;
   justify-content: center;
+  align-self: center;
   gap: 5%;
   text-align: center;
 }
@@ -60,9 +67,20 @@ a:hover {
 /*Section title*/
 .title-name {
   background-color: bisque;
+  background-image: url("../img/Blue-circuit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--bg-color-primary);
 }
-.title-name:nth-child(n) {
-  padding: 10% 0px;
+
+/*Section about me*/
+.about__container {
+  display: flex;
+  align-items: center;
+}
+.p__aboutme {
+  padding: 0px 75px;
+  text-align: justify;
 }
 /*Section courses*/
 .ul__education {
@@ -75,16 +93,54 @@ a:hover {
   justify-content: center;
   gap: 15px;
 }
-.ul__courses .course-card {
+.course-card {
   border: 1px solid black;
+  border-radius: 15px;
   width: 350px;
 }
 .ul_skill__list {
   font-style: oblique;
 }
+
 /*Section work experience*/
 .work-card {
+  margin: 10%;
   padding: 10%;
   border: 1px solid black;
   text-align: left;
+}
+/*Footer*/
+.footer {
+  background-color: var(--ft-color-secondary);
+  color: var(--bg-color-primary);
+  text-align: start;
+}
+.ul__links {
+  width: 300px;
+  display: flex;
+  gap: 30px;
+}
+.li__links {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.li__links:hover {
+  cursor: pointer;
+  background-color: #033aaf;
+  fill: var(--bg-color-primary);
+}
+.footer-container {
+  padding: 10px;
+}
+.footer-svg {
+  width: 35px;
+}
+.p__rights {
+  font-size: 15px;
+  text-align: center;
 }

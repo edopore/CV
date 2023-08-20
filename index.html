@@ -13,7 +13,7 @@
   <body>
     <script src="./js/index.js"></script>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav-bar nav-container">
           <a href="./index.html" class="logo">MyLogo</a>
           <ul class="nav-bar menu">
@@ -49,38 +49,47 @@
       <section class="about-me" id="about-me">
         <div class="container">
           <h2>Acerca de Mi</h2>
-          <img
-            id="photo"
-            src="./img/profile.jpg"
-            alt="profile photo"
-            width="250"
-          />
-          <ul>
-            <li>
-              <p>
-                Ingeniero electrónico egresado de la Universidad de Antioquia.
-                Con conocimientos en programacion web, haciendo uso de lenguajes
-                de programacion como Java, Python, JavaScript y PHP.
-              </p>
-            </li>
-            <li>
-              <p>
-                tengo conocimientos en frameworks de desarrollo como django de
-                python, node.js de JavaScript y Laravel de PHP. Uso de librerias
-                para desarrollo web como flask, manejo de datos y machine
-                learning como Pandas y scikit-learn, Testing como mocha, axios,
-                cypress. Entre otros...
-              </p>
-            </li>
-            <li>
-              <p>
-                Soy una persona con interes en adquirir nuevos conocimientos y
-                ponerlos a prueba en retos dentro del mundo del desarrollo y la
-                programación, Soy colaborador. Activo en el trabajo en grupo
-                para realizar soluciones tecnologicas de gran impacto.
-              </p>
-            </li>
-          </ul>
+          <div class="about__container">
+            <ul class="ul__photo">
+              <li>
+                <img
+                  id="photo"
+                  src="./img/profile.jpg"
+                  alt="profile photo"
+                  width="250"
+                />
+              </li>
+            </ul>
+            <ul class="ul__description">
+              <li>
+                <p class="p__aboutme">
+                  Soy ingeniero electrónico egresado de la Universidad de
+                  Antioquia. Con 3 años de experiencia en administración de
+                  redes de comunicaciones, configuración de equipos de redes,
+                  automatización de tareas y analisis de datos.
+                </p>
+              </li>
+              <li>
+                <p class="p__aboutme">
+                  Tengo conocimientos en herramientas de ofimática, frameworks
+                  de desarrollo web como django y flask de python, node.js de
+                  JavaScript y Laravel de PHP. Manejo de datos y machine
+                  learning como Pandas y scikit-learn. Testing y pruebas de
+                  calidad como mocha, axios, cypress. Entre otros...
+                </p>
+              </li>
+              <li>
+                <p class="p__aboutme">
+                  Soy una persona interesada en la tecnología y en la formación
+                  continua en adquirir nuevos conocimientos y ponerlos a prueba
+                  en retos dentro del mundo del desarrollo y la programación. Me
+                  considero muy colaborador, con participación activa dentro de
+                  mis grupos de trabajo para realizar soluciones tecnologicas de
+                  gran impacto.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="courses" id="courses">
@@ -170,7 +179,7 @@
               </li>
               <li class="course-card">
                 <h3>
-                  Diplonado en técnicas de apoyo para la protección de la
+                  Diplomado en técnicas de apoyo para la protección de la
                   información bajo norma ISO 27001:2013
                 </h3>
                 <p>Instituto Tecnológico del Putumayo</p>
@@ -286,49 +295,38 @@
       </section>
     </main>
   </body>
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="container footer-container">
       <address id="contact-me">
         <ul class="ul__address">
           <li><h2>Información de contacto</h2></li>
           <li><p>Location: Mocoa - Putumayo, Colombia</p></li>
         </ul>
         <ul class="ul__links">
-          <li>
-            <a href="mailto:eduardoj.mayar@gmail.com"
-              >eduardoj.mayar@gmail.com</a
-            >
+          <li class="li__links">
+            <a href="mailto:eduardoj.mayar@gmail.com">
+              <svg class="footer-svg">
+                <use href="./img/icons/symbol-defs.svg#hw04-mail"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="https://linkedin.com/in/eduardomaya"
-              ><img
-                src="./img/linkedin.png"
-                alt="linkedin"
-                width="50"
-                height="50"
-            /></a>
+          <li class="li__links">
+            <a href="https://linkedin.com/in/eduardomaya" target="_blank">
+              <svg class="footer-svg">
+                <use href="./img/icons/symbol-defs.svg#hw04-linkedin2"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="mailto:eduardoj.mayar@gmail.com"
-              ><img
-                src="./img/email.png"
-                alt="Send Email"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/edopore"
-              ><img
-                src="./img/signo-de-github.png"
-                alt="github"
-                width="50"
-                height="50"
-            /></a>
+          <li class="li__links">
+            <a href="https://github.com/edopore" target="_blank">
+              <svg class="footer-svg">
+                <use href="./img/icons/symbol-defs.svg#hw04-github"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </address>
-      <p>
+      <p class="p__rights">
         Designed By Eduardo José Maya Rodriguez in association with curvo
         innovation labs 2023 all rights reserved
       </p>
