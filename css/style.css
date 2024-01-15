@@ -99,7 +99,9 @@ a:hover {
   width: 350px;
 }
 .ul_skill__list {
-  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 /*Section work experience*/
@@ -131,14 +133,16 @@ a:hover {
 }
 .li__links:hover {
   cursor: pointer;
-  background-color: #033aaf;
-  fill: var(--bg-color-primary);
+  background-color: var(--ft-color-primary);
 }
 .footer-container {
   padding: 10px;
 }
 .footer-svg {
   width: 35px;
+}
+.footer-svg:hover {
+  fill: var(--bg-color-primary);
 }
 .p__rights {
   font-size: 15px;
